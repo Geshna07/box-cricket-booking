@@ -7,6 +7,14 @@
       "password": "admin123",
       "phone": "9999999999",
       "isAdmin": true
+    },
+    {
+      "name": "B Geshna",
+      "email": "geshnab1507@gmail.com",
+      "phone": "12345678890",
+      "password": "Geshna",
+      "isAdmin": false,
+      "id": "Nn48z5xPqfo"
     }
   ],
   "slots": [
@@ -326,6 +334,21 @@
       "bookingId": "BK1716800003",
       "status": "confirmed",
       "bookedAt": "2026-05-28T12:00:00.000Z"
+    },
+    {
+      "slotId": "slot2",
+      "userId": "Nn48z5xPqfo",
+      "userName": "B Geshna",
+      "userPhone": "12345678890",
+      "date": "2026-05-29",
+      "time": "06:00 AM - 07:00 AM",
+      "sport": "Box Cricket",
+      "venue": "Ground A",
+      "price": 500,
+      "bookingId": "BK1780046565665",
+      "status": "cancelled",
+      "bookedAt": "2026-05-29T09:22:45.665Z",
+      "id": "1xXE1uXk8UE"
     }
   ]
 }
