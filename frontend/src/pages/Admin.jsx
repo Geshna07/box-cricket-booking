@@ -16,15 +16,15 @@ export default function Admin() {
 
   useEffect(() => {
     if (!user?.isAdmin) { navigate('/login'); return }
-    axios.get('http://localhost:5000/bookings').then(r => setBookings(r.data))
-    axios.get('http://localhost:5000/users').then(r => setUsers(r.data))
-    axios.get('http://localhost:5000/slots').then(r => setSlots(r.data))
+    axios.get(`${import.meta.env.VITE_API_URL}/bookings`).then(r => setBookings(r.data))
+    axios.get(`${import.meta.env.VITE_API_URL}/users`).then(r => setUsers(r.data))
+    axios.get(`${import.meta.env.VITE_API_URL}/slots`).then(r => setSlots(r.data))
   }, [])
 
   const handleCancelBooking = async (booking) => {
     if (!window.confirm(`Cancel booking ${booking.bookingId}?`)) return
-    await axios.patch(`http://localhost:5000/bookings/${booking.id}`, { status: 'cancelled' })
-    await axios.patch(`http://localhost:5000/slots/${booking.slotId}`, { isBooked: false })
+    await axios.patch(`${import.meta.env.VITE_API_URL}/bookings/${booking.id}`, { status: 'cancelled' })
+    await axios.patch(`${import.meta.env.VITE_API_URL}/slots/${booking.slotId}`, { isBooked: false })
     setBookings(prev => prev.map(b => b.id === booking.id ? { ...b, status: 'cancelled' } : b))
   }
 
@@ -34,7 +34,7 @@ export default function Admin() {
       setSlotMsg('Please fill all fields.')
       return
     }
-    await axios.post('http://localhost:5000/slots', {
+    await axios.post(`${import.meta.env.VITE_API_URL}/slots`, {
       ...newSlot,
       price: parseInt(newSlot.price),
       isBooked: false,
@@ -42,7 +42,7 @@ export default function Admin() {
     })
     setSlotMsg('✅ Slot added successfully!')
     setNewSlot({ date: '', time: '', sport: 'Box Cricket', price: '', venue: 'Ground A' })
-    const res = await axios.get('http://localhost:5000/slots')
+    const res = await axios.get(`${import.meta.env.VITE_API_URL}/slots`)
     setSlots(res.data)
     setTimeout(() => setSlotMsg(''), 3000)
   }

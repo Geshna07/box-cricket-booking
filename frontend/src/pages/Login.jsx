@@ -13,7 +13,7 @@ export default function Login() {
     setError('')
     setLoading(true)
     try {
-      const res = await axios.get(`http://localhost:5000/users?email=${form.email}`)
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/users?email=${form.email}`)
       const user = res.data[0]
       if (!user || user.password !== form.password) {
         setError('Invalid email or password')
