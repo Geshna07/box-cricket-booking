@@ -10,7 +10,7 @@ export default function MyBookings() {
 
   useEffect(() => {
     if (!user) { navigate('/login'); return }
-    axios.get(`http://localhost:5000/bookings?userId=${user.id}`)
+    axios.get(`${import.meta.env.VITE_API_URL}/bookings?userId=${user.id}`)
       .then(res => {
         setBookings(res.data.reverse())
         setLoading(false)
@@ -22,8 +22,8 @@ export default function MyBookings() {
       `Cancel booking ${booking.bookingId}?\n\n${booking.sport} - ${booking.time} on ${booking.date}`
     )
     if (!confirmed) return
-    await axios.patch(`http://localhost:5000/bookings/${booking.id}`, { status: 'cancelled' })
-    await axios.patch(`http://localhost:5000/slots/${booking.slotId}`, { isBooked: false })
+    await axios.patch(`${import.meta.env.VITE_API_URL}/bookings/${booking.id}`, { status: 'cancelled' })
+    await axios.patch(`${import.meta.env.VITE_API_URL}/slots/${booking.slotId}`, { isBooked: false })
     setBookings(prev =>
       prev.map(b => b.id === booking.id ? { ...b, status: 'cancelled' } : b)
     )

@@ -7,7 +7,7 @@ export default function Booking() {
   const [booking, setBooking] = useState(null)
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/bookings/${id}`)
+    axios.get(`${import.meta.env.VITE_API_URL}/bookings/${id}`)
       .then(res => setBooking(res.data))
   }, [id])
 

@@ -14,7 +14,7 @@ export default function Slots() {
 
   const fetchSlots = async (d) => {
     setLoading(true)
-    const res = await axios.get(`http://localhost:5000/slots?date=${d}`)
+    const res = await axios.get(`${import.meta.env.VITE_API_URL}/slots?date=${d}`)
     setSlots(res.data)
     setFilteredSlots(res.data)
     setLoading(false)
@@ -49,7 +49,7 @@ export default function Slots() {
     )
     if (!confirmed) return
 
-    await axios.patch(`http://localhost:5000/slots/${slot.id}`, { isBooked: true })
+    await axios.patch(`${import.meta.env.VITE_API_URL}/slots/${slot.id}`, { isBooked: true })
 
     const booking = {
       slotId: slot.id,
@@ -65,7 +65,7 @@ export default function Slots() {
       status: 'confirmed',
       bookedAt: new Date().toISOString()
     }
-    const res = await axios.post('http://localhost:5000/bookings', booking)
+    const res = await axios.post(`${import.meta.env.VITE_API_URL}/bookings`, booking)
     navigate(`/booking/${res.data.id}`)
   }
 

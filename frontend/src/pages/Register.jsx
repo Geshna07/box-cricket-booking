@@ -21,13 +21,13 @@ export default function Register() {
     }
     setLoading(true)
     try {
-      const check = await axios.get(`http://localhost:5000/users?email=${form.email}`)
+      const check = await axios.get(`${import.meta.env.VITE_API_URL}/users?email=${form.email}`)
       if (check.data.length > 0) {
         setError('Email already registered. Please login.')
         setLoading(false)
         return
       }
-      await axios.post('http://localhost:5000/users', {
+      await axios.post(`${import.meta.env.VITE_API_URL}/users`, {
         ...form,
         isAdmin: false
       })
