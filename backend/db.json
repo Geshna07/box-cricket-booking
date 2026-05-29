@@ -1,0 +1,331 @@
+{
+  "users": [
+    {
+      "id": "admin1",
+      "name": "Admin",
+      "email": "admin@boxcricket.com",
+      "password": "admin123",
+      "phone": "9999999999",
+      "isAdmin": true
+    }
+  ],
+  "slots": [
+    {
+      "id": "slot1",
+      "date": "2026-05-29",
+      "time": "05:00 AM - 06:00 AM",
+      "sport": "Box Cricket",
+      "price": 400,
+      "isBooked": false,
+      "venue": "Ground A"
+    },
+    {
+      "id": "slot2",
+      "date": "2026-05-29",
+      "time": "06:00 AM - 07:00 AM",
+      "sport": "Box Cricket",
+      "price": 500,
+      "isBooked": false,
+      "venue": "Ground A"
+    },
+    {
+      "id": "slot3",
+      "date": "2026-05-29",
+      "time": "07:00 AM - 08:00 AM",
+      "sport": "Box Cricket",
+      "price": 500,
+      "isBooked": true,
+      "venue": "Ground A"
+    },
+    {
+      "id": "slot4",
+      "date": "2026-05-29",
+      "time": "08:00 AM - 09:00 AM",
+      "sport": "Badminton",
+      "price": 300,
+      "isBooked": false,
+      "venue": "Court B"
+    },
+    {
+      "id": "slot5",
+      "date": "2026-05-29",
+      "time": "09:00 AM - 10:00 AM",
+      "sport": "Badminton",
+      "price": 300,
+      "isBooked": false,
+      "venue": "Court B"
+    },
+    {
+      "id": "slot6",
+      "date": "2026-05-29",
+      "time": "04:00 PM - 05:00 PM",
+      "sport": "Football",
+      "price": 600,
+      "isBooked": false,
+      "venue": "Ground C"
+    },
+    {
+      "id": "slot7",
+      "date": "2026-05-29",
+      "time": "05:00 PM - 06:00 PM",
+      "sport": "Box Cricket",
+      "price": 700,
+      "isBooked": false,
+      "venue": "Ground A"
+    },
+    {
+      "id": "slot8",
+      "date": "2026-05-29",
+      "time": "06:00 PM - 07:00 PM",
+      "sport": "Box Cricket",
+      "price": 800,
+      "isBooked": true,
+      "venue": "Ground A"
+    },
+    {
+      "id": "slot9",
+      "date": "2026-05-29",
+      "time": "07:00 PM - 08:00 PM",
+      "sport": "Football",
+      "price": 700,
+      "isBooked": false,
+      "venue": "Ground C"
+    },
+    {
+      "id": "slot10",
+      "date": "2026-05-29",
+      "time": "08:00 PM - 09:00 PM",
+      "sport": "Badminton",
+      "price": 400,
+      "isBooked": false,
+      "venue": "Court B"
+    },
+    {
+      "id": "slot11",
+      "date": "2026-05-30",
+      "time": "05:00 AM - 06:00 AM",
+      "sport": "Box Cricket",
+      "price": 400,
+      "isBooked": false,
+      "venue": "Ground A"
+    },
+    {
+      "id": "slot12",
+      "date": "2026-05-30",
+      "time": "06:00 AM - 07:00 AM",
+      "sport": "Box Cricket",
+      "price": 500,
+      "isBooked": false,
+      "venue": "Ground A"
+    },
+    {
+      "id": "slot13",
+      "date": "2026-05-30",
+      "time": "07:00 AM - 08:00 AM",
+      "sport": "Badminton",
+      "price": 300,
+      "isBooked": false,
+      "venue": "Court B"
+    },
+    {
+      "id": "slot14",
+      "date": "2026-05-30",
+      "time": "04:00 PM - 05:00 PM",
+      "sport": "Football",
+      "price": 600,
+      "isBooked": false,
+      "venue": "Ground C"
+    },
+    {
+      "id": "slot15",
+      "date": "2026-05-30",
+      "time": "05:00 PM - 06:00 PM",
+      "sport": "Box Cricket",
+      "price": 700,
+      "isBooked": false,
+      "venue": "Ground A"
+    },
+    {
+      "id": "slot16",
+      "date": "2026-05-30",
+      "time": "06:00 PM - 07:00 PM",
+      "sport": "Box Cricket",
+      "price": 800,
+      "isBooked": false,
+      "venue": "Ground A"
+    },
+    {
+      "id": "slot17",
+      "date": "2026-05-30",
+      "time": "07:00 PM - 08:00 PM",
+      "sport": "Football",
+      "price": 700,
+      "isBooked": true,
+      "venue": "Ground C"
+    },
+    {
+      "id": "slot18",
+      "date": "2026-05-30",
+      "time": "08:00 PM - 09:00 PM",
+      "sport": "Badminton",
+      "price": 400,
+      "isBooked": false,
+      "venue": "Court B"
+    },
+    {
+      "id": "slot19",
+      "date": "2026-05-31",
+      "time": "05:00 AM - 06:00 AM",
+      "sport": "Box Cricket",
+      "price": 400,
+      "isBooked": false,
+      "venue": "Ground A"
+    },
+    {
+      "id": "slot20",
+      "date": "2026-05-31",
+      "time": "06:00 AM - 07:00 AM",
+      "sport": "Box Cricket",
+      "price": 500,
+      "isBooked": false,
+      "venue": "Ground A"
+    },
+    {
+      "id": "slot21",
+      "date": "2026-05-31",
+      "time": "07:00 AM - 08:00 AM",
+      "sport": "Badminton",
+      "price": 300,
+      "isBooked": false,
+      "venue": "Court B"
+    },
+    {
+      "id": "slot22",
+      "date": "2026-05-31",
+      "time": "05:00 PM - 06:00 PM",
+      "sport": "Box Cricket",
+      "price": 700,
+      "isBooked": false,
+      "venue": "Ground A"
+    },
+    {
+      "id": "slot23",
+      "date": "2026-05-31",
+      "time": "06:00 PM - 07:00 PM",
+      "sport": "Football",
+      "price": 700,
+      "isBooked": false,
+      "venue": "Ground C"
+    },
+    {
+      "id": "slot24",
+      "date": "2026-05-31",
+      "time": "07:00 PM - 08:00 PM",
+      "sport": "Box Cricket",
+      "price": 800,
+      "isBooked": false,
+      "venue": "Ground A"
+    },
+    {
+      "id": "slot25",
+      "date": "2026-06-01",
+      "time": "06:00 AM - 07:00 AM",
+      "sport": "Box Cricket",
+      "price": 500,
+      "isBooked": false,
+      "venue": "Ground A"
+    },
+    {
+      "id": "slot26",
+      "date": "2026-06-01",
+      "time": "07:00 AM - 08:00 AM",
+      "sport": "Badminton",
+      "price": 300,
+      "isBooked": false,
+      "venue": "Court B"
+    },
+    {
+      "id": "slot27",
+      "date": "2026-06-01",
+      "time": "05:00 PM - 06:00 PM",
+      "sport": "Box Cricket",
+      "price": 700,
+      "isBooked": false,
+      "venue": "Ground A"
+    },
+    {
+      "id": "slot28",
+      "date": "2026-06-01",
+      "time": "06:00 PM - 07:00 PM",
+      "sport": "Football",
+      "price": 700,
+      "isBooked": false,
+      "venue": "Ground C"
+    },
+    {
+      "id": "slot29",
+      "date": "2026-06-01",
+      "time": "07:00 PM - 08:00 PM",
+      "sport": "Box Cricket",
+      "price": 800,
+      "isBooked": true,
+      "venue": "Ground A"
+    },
+    {
+      "id": "slot30",
+      "date": "2026-06-01",
+      "time": "08:00 PM - 09:00 PM",
+      "sport": "Badminton",
+      "price": 400,
+      "isBooked": false,
+      "venue": "Court B"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "demo1",
+      "slotId": "slot3",
+      "userId": "admin1",
+      "userName": "Admin",
+      "userPhone": "9999999999",
+      "date": "2026-05-29",
+      "time": "07:00 AM - 08:00 AM",
+      "sport": "Box Cricket",
+      "venue": "Ground A",
+      "price": 500,
+      "bookingId": "BK1716800001",
+      "status": "confirmed",
+      "bookedAt": "2026-05-28T10:00:00.000Z"
+    },
+    {
+      "id": "demo2",
+      "slotId": "slot8",
+      "userId": "admin1",
+      "userName": "Admin",
+      "userPhone": "9999999999",
+      "date": "2026-05-29",
+      "time": "06:00 PM - 07:00 PM",
+      "sport": "Box Cricket",
+      "venue": "Ground A",
+      "price": 800,
+      "bookingId": "BK1716800002",
+      "status": "confirmed",
+      "bookedAt": "2026-05-28T11:00:00.000Z"
+    },
+    {
+      "id": "demo3",
+      "slotId": "slot17",
+      "userId": "admin1",
+      "userName": "Admin",
+      "userPhone": "9999999999",
+      "date": "2026-05-30",
+      "time": "07:00 PM - 08:00 PM",
+      "sport": "Football",
+      "venue": "Ground C",
+      "price": 700,
+      "bookingId": "BK1716800003",
+      "status": "confirmed",
+      "bookedAt": "2026-05-28T12:00:00.000Z"
+    }
+  ]
+}
