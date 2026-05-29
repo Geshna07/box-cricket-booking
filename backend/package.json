@@ -8,7 +8,7 @@
   "dev": "json-server --watch db.json --port 5000"
 },
 "engines": {
-  "node": "18.x"
+  "node": "20.x"
 },
   "keywords": [],
   "author": "",
